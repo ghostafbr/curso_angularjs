@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="MyFirstApp">
+
+<head>
+
+    <style>
+        .animated{
+            opacity: 1;
+            max-height: auto;
+            overflow: hidden;
+            transition: all 2s;
+        }
+        .animated.ng-hide{
+            opacity: 0;
+            max-height: 0px !important;
+            display: block !important;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <title>Child Controllers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="controller.js"></script>
+</head>
+
+<body ng-controller="FirstController">
+
+</body>
+    {{nombre}}
+    <p>Valor del Padre: <strong>{{$parent.nombre}}</strong></p>
+    <div ng-controller="ChildController">
+        <p>Valor del hijo: <strong>{{nombre}}</strong></p>
+        <input type="text" ng-model="$parent.nombre">
+    </div>
+</html>

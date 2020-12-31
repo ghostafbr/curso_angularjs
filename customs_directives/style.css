@@ -1,0 +1,17 @@
+.circular{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+.no-list{
+    margin-top: 120px;
+}
+.no-list .li{
+    list-style-type: none !important;
+}
+body,html{
+    text-align: center;
+    background-color: #eee;
+    margin: 0px;
+}
