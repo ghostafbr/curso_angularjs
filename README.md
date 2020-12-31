@@ -51,4 +51,5 @@ https://ghostafbr.github.io/curso_angularjs/todo/index.html#/
 
 ## proyecto_final
 https://ghostafbr.github.io/curso_angularjs/proyecto_final/index.html#/
-
+Se desarrolló Usando Lumx (front-end framework based on Google Material Design)
+--------------------
